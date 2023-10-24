@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Icons</title>
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+
+        <nav>
+            <a class="logo" href="/"><img src="iconeloja.jpg" width="190" height="45"></a>
+            <div class="mobile-menu"> 
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+              <ul class="nav-list">
+                <li><a href="#">Início</a></li>ㅤㅤㅤ
+                <li><a href="#">Sobre</a></li>ㅤㅤㅤ
+                <li><a href="#">Projetos</a></li>ㅤㅤㅤ
+                <li><a href="#">Contato</a></li>
+              </ul>
+              <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        </nav>
+
+        <div class="cart">
+            <h2 class="cart-title">Carrinho</h2>
+
+            <!-- CONTENT  -->
+            <div class="cart-content">
+
+
+            </div>
+
+            <!-- TOTAL   -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button type="button" class="btn-buy">Finalizar Compra</button>
+            <!-- CART CLOSE  -->
+            <i class='bx bx-x' id="cart-close"></i>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section>
+        <div class="imagens">
+            <div class="left-side">
+                <div class="items">
+                    <div class="select-image">
+                        <img src="fotoex.jpg" alt="">
+                    </div>
+<div class="thumbnails">
+    <div class="thumbnail">
+        <img src="fotoex.jpg" alt="">
+    </div>
+    <div class="thumbnail">
+        <img src="fotoex.jpg" alt="">
+    </div>
+    <div class="thumbnail">
+        <img src="fotoex.jpg" alt="">
+    </div>
+    <div class="thumbnail">
+        <img src="fotoex.jpg" alt="">
+    </div>
+</div>
+                </div>
+
+            </div>
+        
+            <div class="right-side">
+                <div class="content">
+                    <h6>THE ICONS</h6>
+                    <h1>nome do produto</h1>
+                    <p>descrição</p>
+                    <div class="prices">
+                        <span class="price">R$ 0000.00</span>
+                        <span class="off">R$ 0000.00</span>
+                    </div>
+                    <div class="options">
+                        <div class="amount">
+                            <div class="minus">
+                                <img style="width: 10px;" src="menos.png">
+                            </div>
+                        <span>0</span>  
+                        <div class="plus">
+                            <img style="width: 10px;" src="mais.png">
+                        </div>  
+                        </div>
+                    
+                        <a class="button" href=""><img style="width: 30px;" src="sacola.png">Adicionar</a>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<h3>Produtos Relacionados</h3>
+
+
+
+
+
+<section class="products">
+    <div class="all-products">
+        <div class="product">
+            <img src="AirPod 2nd Gen.jpg">
+            <div class="product-info">
+                <h4 class="product-title">AirPod 2nd Gen
+                </h4>
+                <p class="product-price">$129</p>
+                <a class="product-btn" href="#">Buy Now</a>
+
+            </div>
+        </div>
+        <div class="all-products">
+            <div class="product">
+                <img src="AirPod 2nd Gen.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">AirPod 2nd Gen
+                    </h4>
+                    <p class="product-price">$129</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+    
+                </div>
+            </div>
+        <div class="product">
+            <img src="apple-watch-pcq.jpg">
+            <div class="product-info">
+                <h4 class="product-title">Apple Watch
+                </h4>
+                <p class="product-price">$299</p>
+                <a class="product-btn" href="#">Buy Now</a>
+
+            </div>
+        </div>
+        <div class="product">
+            <img src="iPhone-14.jpg">
+            <div class="product-info">
+                <h4 class="product-title">iPhone 14
+                </h4>
+                <p class="product-price">$999</p>
+                <a class="product-btn" href="#">Buy Now</a>
+
+            </div>
+        </div>
+        <div class="product">
+            <img src="ipad-pro.jpg">
+            <div class="product-info">
+                <h4 class="product-title">iPan Pro
+                    </h4>
+                <p class="product-price">$629*</p>
+                <a class="product-btn" href="#">Buy Now</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- link js  -->
+<script src="assets/js/main.js"></script>
+<script src="index.js"></script>
+<script>
+    class MobileNavbar {
+        constructor(mobileMenu, navList, navLinks) {
+          this.mobileMenu = document.querySelector(mobileMenu);
+          this.navList = document.querySelector(navList);
+          this.navLinks = document.querySelectorAll(navLinks);
+          this.activeClass = "active";
+      
+          this.handleClick = this.handleClick.bind(this);
+        }
+      
+        animateLinks() {
+          this.navLinks.forEach((link, index) => {
+            link.style.animation
+              ? (link.style.animation = "")
+              : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+                  index / 7 + 0.3
+                }s`);
+          });
+        }
+      
+        handleClick() {
+          this.navList.classList.toggle(this.activeClass);
+          this.mobileMenu.classList.toggle(this.activeClass);
+          this.animateLinks();
+        }
+      
+        addClickEvent() {
+          this.mobileMenu.addEventListener("click", this.handleClick);
+        }
+      
+        init() {
+          if (this.mobileMenu) {
+            this.addClickEvent();
+          }
+          return this;
+        }
+      }
+      
+      const mobileNavbar = new MobileNavbar(
+        ".mobile-menu",
+        ".nav-list",
+        ".nav-list li",
+      );
+      mobileNavbar.init();
+</script>
+</body>
+</html>
